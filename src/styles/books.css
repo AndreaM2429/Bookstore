@@ -1,0 +1,37 @@
+header {
+  width: 100%;
+}
+
+header ul {
+  gap: 15px;
+  list-style: none;
+  align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+.books-container {
+  width: 100%;
+  align-items: center;
+  padding-top: 30px;
+  gap: 15px;
+}
+
+.book-card {
+  width: 90%;
+  height: 130px;
+  justify-content: space-around;
+  border: 2px solid gray;
+  padding: 5px;
+}
+
+.book-status {
+  width: 250px;
+  justify-content: center;
+}
+
+.addbook {
+  gap: 15px;
+}
