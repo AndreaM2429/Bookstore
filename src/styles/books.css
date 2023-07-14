@@ -21,7 +21,6 @@ header ul a {
 
 .book-card {
   width: 90%;
-  height: 130px;
   justify-content: space-around;
   border: 2px solid gray;
   padding: 5px;
@@ -30,6 +29,10 @@ header ul a {
 .book-status {
   width: 250px;
   justify-content: center;
+}
+
+.book-data {
+  margin: 5px;
 }
 
 .addbook {
