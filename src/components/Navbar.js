@@ -11,7 +11,7 @@ function Navbar() {
             <Link to="/">Books</Link>
           </li>
           <li>
-            <Link to="/authors">Authors</Link>
+            <Link to="/categories">Categories</Link>
           </li>
         </ul>
       </nav>
