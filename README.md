@@ -60,7 +60,8 @@ It was built using React and Redux.
 <details>
   <summary>React</summary>
   <ul>
-      <li>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App.</a></li>
+      <li>This project was build with <a href="https://github.com/facebook/create-react-app">Create React App.</a></li>
+      <li>This project uses <a href="https://redux-toolkit.js.org/tutorials/quick-start#create-a-redux-store">Redux Toolkit</a></li>
     </ul>
 </details>
 
@@ -72,6 +73,7 @@ It was built using React and Redux.
 - **SPA**
 - **Simple interface**
 - **React App**
+- **Redux Toolkit**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,7 +201,6 @@ To deploy this project by someone who isn't the owner is prohibit.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add reducers and actions**
 - [ ] **Use Redux in React components**
 - [ ] **Connect to API**
 - [ ] **Add styling**
