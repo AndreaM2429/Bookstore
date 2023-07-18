@@ -1,27 +1,35 @@
 import { useDispatch } from 'react-redux';
+import { useState, useEffect } from 'react';
 import { addBook } from '../../redux/books/booksSlice';
 import books from '../ListBooks';
 
 const ButtonAdd = () => {
   const dispatch = useDispatch();
+  const [book, setBook] = useState('');
+  const [author, setAuthor] = useState('');
 
   const SubmitBook = (e) => {
     const button = e.target;
     const dataForm = button.parentElement;
-    const book = dataForm.querySelector('#bookTitle').value;
-    const author = dataForm.querySelector('#author').value;
 
+    setBook(dataForm.bookTitle.value);
+    setAuthor(dataForm.author.value);
     if (book === '' || author === '') {
-      const message = 'Enter all the data please';
-      document.querySelector('.messagecont').textContent = message;
-    } else {
-      document.querySelector('.messagecont').textContent = '';
-      dispatch(addBook(books(book, author)));
-      dataForm.reset();
+      document.querySelector('.messagecont').textContent = 'Enter all the data please';
     }
   };
+
+  useEffect(() => {
+    if (book !== '' && author !== '') {
+      dispatch(addBook(books(book, author)));
+      setBook('');
+      setAuthor('');
+      document.querySelector('form').reset();
+      document.querySelector('.messagecont').textContent = '';
+    }
+  }, [book, author, dispatch]);
   return (
-    <button type="submit" onClick={(e) => SubmitBook(e)}>Submit</button>
+    <button type="button" onClick={SubmitBook}>Submit</button>
   );
 };
 
