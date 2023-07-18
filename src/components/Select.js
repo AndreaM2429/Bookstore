@@ -1,4 +1,4 @@
-const arrCatego = ['Romance', 'Horror', 'Adventure', 'History', 'Biography', 'Historical fiction', 'Nonfiction', 'Others'];
+const arrCatego = ['Romance', 'Horror', 'Adventure', 'History', 'Biography', 'Fiction', 'Nonfiction', 'Others'];
 
 function Select() {
   return (
