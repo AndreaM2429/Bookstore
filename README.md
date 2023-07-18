@@ -74,6 +74,7 @@ It was built using React and Redux.
 - **Simple interface**
 - **React App**
 - **Redux Toolkit**
+- **Implementation of `react-redux`**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,7 +202,6 @@ To deploy this project by someone who isn't the owner is prohibit.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Use Redux in React components**
 - [ ] **Connect to API**
 - [ ] **Add styling**
 - [ ] **Deploy the project**
