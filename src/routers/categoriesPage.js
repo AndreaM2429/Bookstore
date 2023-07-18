@@ -1,9 +1,7 @@
-import CategoriesTable from '../components/CategoryTable';
-
 function CategoriesPage() {
   return (
     <>
-      <CategoriesTable />
+      <p>Under construction</p>
     </>
   );
 }
