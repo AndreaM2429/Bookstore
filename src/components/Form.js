@@ -1,4 +1,5 @@
 import ButtonAdd from './buttons/ButtonAdd';
+import Select from './Select';
 
 function AddBook() {
   return (
@@ -7,6 +8,7 @@ function AddBook() {
       <form className="d-flex addbook" onSubmit={(ev) => ev.preventDefault()}>
         <input name="bookTitle" id="bookTitle" placeholder="Book title" />
         <input name="author" id="author" placeholder="Author" />
+        <Select />
         <ButtonAdd />
         <span className="messagecont" />
       </form>
