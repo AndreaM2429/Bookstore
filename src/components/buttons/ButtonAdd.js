@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
-import { addBook } from '../../redux/books/booksSlice';
+import { addNewBook } from '../../redux/books/booksSlice';
 import books from '../ListBooks';
 
 const ButtonAdd = () => {
@@ -23,7 +23,7 @@ const ButtonAdd = () => {
 
   useEffect(() => {
     if (book !== '' && author !== '' && catego !== 'None') {
-      dispatch(addBook(books(book, author, catego)));
+      dispatch(addNewBook(books(book, author, catego)));
       setBook('');
       setAuthor('');
       document.querySelector('form').reset();
