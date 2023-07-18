@@ -65,16 +65,22 @@ It was built using React and Redux.
     </ul>
 </details>
 
+<details>
+  <summary>API</summary>
+  <ul>
+      <li>This project use <a href="https://microverse.notion.site/Bookstore-API-51ea269061f849118c65c0a53e88a739">Bookstore API</a> as backend.</li>
+    </ul>
+</details>
+
 
 ### Key Features <a name="key-features"></a>
-
-> In this section there are some features that you can notice in the project
 
 - **SPA**
 - **Simple interface**
 - **React App**
 - **Redux Toolkit**
 - **Implementation of `react-redux`**
+- **Use an API as backend**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,7 +208,6 @@ To deploy this project by someone who isn't the owner is prohibit.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Connect to API**
 - [ ] **Add styling**
 - [ ] **Deploy the project**
 
