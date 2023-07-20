@@ -1,8 +1,8 @@
 function CategoriesPage() {
   return (
-    <>
-      <p>Under construction</p>
-    </>
+    <section className="catego-page d-flex">
+      <p>&#9874; Under construction &#9874;</p>
+    </section>
   );
 }
 
