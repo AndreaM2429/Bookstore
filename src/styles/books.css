@@ -1,40 +1,171 @@
 header {
   width: 100%;
+  background-color: #fff;
 }
 
 header ul {
-  gap: 15px;
+  gap: 1.2rem;
   list-style: none;
   align-items: center;
+  margin: 0;
+  padding-left: 3.5rem;
 }
 
 header ul a {
   text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  color: #121212;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 1.875rem;
+}
+
+header img {
+  width: 2.813rem;
+  height: 2.813rem;
+  padding-right: 3.5rem;
 }
 
 .books-container {
   width: 100%;
   align-items: center;
-  padding-top: 30px;
-  gap: 15px;
+  margin: 2.313rem 6.25rem 0;
+  gap: 1.2rem;
 }
 
 .book-card {
   width: 90%;
   justify-content: space-around;
+  align-items: center;
   border: 2px solid gray;
-  padding: 5px;
+  padding: 0.9rem;
+  background-color: #fff;
+}
+
+.book-info {
+  width: 16rem;
+  height: 8rem;
+}
+
+.catego {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  color: #121212;
+  margin: 0.32rem;
 }
 
 .book-status {
-  width: 250px;
+  width: 15.7rem;
   justify-content: center;
 }
 
-.book-data {
-  margin: 5px;
+.addbook {
+  width: 90%;
+  gap: 1.2rem;
+  align-items: center;
 }
 
-.addbook {
-  gap: 15px;
+#bookTitle,
+#author {
+  width: 13rem;
+  height: 2rem;
+}
+
+#categories {
+  width: 13rem;
+  height: 2.3rem;
+}
+
+.title-form {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+  width: 90%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 0.875rem;
+  color: #4386bf;
+  margin: 1rem 0.938rem 0.125rem 0;
+  border-radius: 3px;
+}
+
+.addbook button {
+  width: 11.5rem;
+  height: 2.813rem;
+  background-color: #0290ff;
+  color: #fff;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.375rem;
+  margin: 0.22rem;
+}
+
+.author {
+  font-size: 0.875rem;
+  color: #4386bf;
+  margin: 0.32rem;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-top: 0.3rem solid rgb(66, 139, 202);
+  border-right: 0.3rem solid rgb(66, 139, 202);
+  border-bottom: 0.3rem solid rgb(66, 139, 202);
+  border-left: 0.3rem solid rgba(66, 139, 202, 0.2);
+  border-radius: 30px;
+  transform: rotate(25deg);
+  margin-right: 0.625rem;
+}
+
+.porcentage {
+  align-items: center;
+  font-size: 1.375rem;
+  color: #121212;
+  height: 6rem;
+  width: 8rem;
+}
+
+.porcentage .complete {
+  font-size: 0.875rem;
+}
+
+.chap-container {
+  width: 15.5rem;
+  height: 6.3rem;
+}
+
+.chap-container button {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin-top: 0.75rem;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #0290ff;
+}
+
+.chap-title {
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+}
+
+.chap {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #121212;
+  margin-top: 0.438rem;
 }
