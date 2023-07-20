@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import logo from '../styles/icon-user.png';
 
 function Navbar() {
   return (
@@ -14,6 +15,7 @@ function Navbar() {
             <Link to="/categories">Categories</Link>
           </li>
         </ul>
+        <img src={logo} alt="user icon" />
       </nav>
     </header>
   );
