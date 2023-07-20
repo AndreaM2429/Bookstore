@@ -5,7 +5,7 @@ function BookState() {
   const { arrBooks, generalError } = useSelector((state) => state.books);
   if (generalError === true) {
     return (
-      <section className="d-flex-column books-container">
+      <section className="d-flex-column catego-page">
         <h2>Ops....something went wrong!</h2>
         <h4>Refresh the page please.</h4>
       </section>
