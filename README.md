@@ -81,6 +81,7 @@ It was built using React and Redux.
 - **Redux Toolkit**
 - **Implementation of `react-redux`**
 - **Use an API as backend**
+- **Style based on [Zeplin project](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,7 +209,6 @@ To deploy this project by someone who isn't the owner is prohibit.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add styling**
 - [ ] **Deploy the project**
 
 

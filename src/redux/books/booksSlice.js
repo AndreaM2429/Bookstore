@@ -53,29 +53,30 @@ const createObjt = (books) => {
 const bookSlice = createSlice({
   name: 'Books',
   initialState,
-  extraReducers: {
-    [addNewBook.fulfilled]: (state, action) => {
-      state.arrBooks.push(action.meta.arg);
-    },
-    [addNewBook.rejected]: (state) => {
-      state.generalError = true;
-    },
-    [getBookList.fulfilled]: (state, action) => {
-      const arr = createObjt(action.payload);
-      state.arrBooks = arr;
-      state.isload = false;
-    },
-    [getBookList.rejected]: (state) => {
-      state.generalError = true;
-    },
-    [deleteBooks.fulfilled]: (state, action) => {
-      const arrBooks = [...state.arrBooks];
-      const newState = arrBooks.filter((book) => book.item_id !== action.meta.arg);
-      state.arrBooks = newState;
-    },
-    [deleteBook.rejected]: (state) => {
-      state.generalError = true;
-    },
+  extraReducers: (builder) => {
+    builder
+      .addCase(addNewBook.fulfilled, (state, action) => {
+        state.arrBooks.push(action.meta.arg);
+      })
+      .addCase(addNewBook.rejected, (state) => {
+        state.generalError = true;
+      })
+      .addCase(getBookList.fulfilled, (state, action) => {
+        const arr = createObjt(action.payload);
+        state.arrBooks = arr;
+        state.isload = false;
+      })
+      .addCase(getBookList.rejected, (state) => {
+        state.generalError = true;
+      })
+      .addCase(deleteBooks.fulfilled, (state, action) => {
+        const { arrBooks } = state;
+        const newState = arrBooks.filter((book) => book.item_id !== action.meta.arg);
+        state.arrBooks = newState;
+      })
+      .addCase(deleteBooks.rejected, (state) => {
+        state.generalError = true;
+      });
   },
 });
 

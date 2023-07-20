@@ -8,7 +8,7 @@ function Layout() {
     return (
       <>
         <Navbar />
-        <section className="d-flex-column books-container">
+        <section className="d-flex-column catego-page ">
           <h2>Loading....</h2>
         </section>
 

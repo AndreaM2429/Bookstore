@@ -1,7 +1,46 @@
-.App {
-  text-align: center;
-}
-
 .navigation {
   justify-content: space-between;
+  height: 5.938rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: #0290ff;
+  align-items: center;
+}
+
+.catego-page {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+@media (min-width: 1200px) {
+  #bookTitle,
+  #author {
+    width: 17rem;
+  }
+
+  #categories {
+    width: 15rem;
+  }
+
+  .addbook button {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .navigation ul {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .navigation {
+    height: 9rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
 }
