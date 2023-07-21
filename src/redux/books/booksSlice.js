@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { addbookAPI, getBooks, deleteBook } from '../API/ApiMethods';
+import axios from 'axios';
 
 const initialState = {
   arrBooks: [],
@@ -7,10 +7,12 @@ const initialState = {
   generalError: false,
 };
 
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/MCEOPrFCxSkuv85Y9JYV/books';
+
 export const getBookList = createAsyncThunk('get/bookList', async (thunkAPI) => {
   try {
-    const resp = await getBooks();
-    return resp;
+    const resp = await axios.get(url);
+    return resp.data;
   } catch (error) {
     return thunkAPI.rejectWithValue('Something went wrong');
   }
@@ -18,7 +20,7 @@ export const getBookList = createAsyncThunk('get/bookList', async (thunkAPI) => 
 
 export const addNewBook = createAsyncThunk('addbook/', async (book, thunkAPI) => {
   try {
-    const resp = await addbookAPI(book);
+    const resp = await axios.post(url, book);
     return resp.data;
   } catch (error) {
     return thunkAPI.rejectWithValue('Something went wrong');
@@ -27,7 +29,8 @@ export const addNewBook = createAsyncThunk('addbook/', async (book, thunkAPI) =>
 
 export const deleteBooks = createAsyncThunk('deletebook/', async (id, thunkAPI) => {
   try {
-    const resp = await deleteBook(id);
+    const deleteUrl = `${url}/${id}`;
+    const resp = await axios.delete(deleteUrl, id);
     return resp.data;
   } catch (error) {
     return thunkAPI.rejectWithValue('Something went wrong');
